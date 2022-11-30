@@ -1,10 +1,10 @@
 import React from 'react';
-import Uix from './components/Uix';
+import Select from './components/Select';
 
 function App() {
   return (
     <div className="App">
-      <Uix />
+      <Select />
     </div>
   );
 }
