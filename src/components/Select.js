@@ -17,7 +17,9 @@ const createOption = (label) => ({
 });
 
 const SelectField = () => {
-  const { value, onChange } = useFieldExtension();
+  const field = useFieldExtension();
+  const { onChange } = field;
+  const value = field.value || null;
   const [inputValue, setInputValue] = React.useState('');
   const [items, setItems] = React.useState([]);
 
